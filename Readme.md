@@ -26,4 +26,4 @@ Install Adafruit Python Library
 
 Install Python serial library
 
-  > pip install pyserial
+  > sudo apt-get install python-serial
