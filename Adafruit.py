@@ -3,7 +3,8 @@ import struct
 
 class DHT(object):
     def __init__(self, sensor, gpio):
-        self.humidity, self.temperature = Adafruit_DHT.read_retry(sensor, pin)
+        self.humidity, self.temperature = Adafruit_DHT.read_retry(sensor, gpio)
+	print(self.humidity)
 
     def float_to_hex(self,f):
         return hex(struct.unpack('<I', struct.pack('<f', f))[0])[2:]

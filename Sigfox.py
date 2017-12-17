@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import serial
-
+from time import sleep
 
 class Sigfox(object):
     SOH = chr(0x01)
